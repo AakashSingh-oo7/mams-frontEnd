@@ -14,7 +14,7 @@ const App = () => {
 
     return (
         <div>
-            {location.pathname !== "/login" && <Menubar />}
+            {location.pathname !== "/login"||"/" && <Menubar />}
             <Toaster />
             <Routes>
                 <Route path="/dashbord" element={<Dashbord />} />
